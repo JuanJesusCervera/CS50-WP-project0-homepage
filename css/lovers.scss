@@ -1,7 +1,33 @@
+/* SCSS variable*/
+$tableBordersColor: solid black;
 
+/* SCSS inheritance*/
+%tableCells {
+  border: 1px $tableBordersColor;
+  padding: 5px;
+  text-align: center;
+}
+
+/* .class selector*/
 .row > div {
+  font-size: 18px;
   text-align: center;
   padding: 20px;
   background-color: teal;
   border: 2px solid black;
+}
+
+table {
+  border: 2px $tableBordersColor;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th {
+  @extend %tableCells;
+  background-color: lightgrey;
+}
+
+td {
+  @extend %tableCells;
 }
