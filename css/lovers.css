@@ -14,6 +14,14 @@ h1, h2, h3, p, ul {
   margin-left: 50px;
 }
 
+@media only screen and (max-width: 800px) {
+  h1, h2, h3, p, ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 /* .class selector & child selector*/
 .row > div {
   font-size: 22px;
