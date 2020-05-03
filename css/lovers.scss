@@ -8,6 +8,7 @@ $tableBorderColor: solid black;
   text-align: center;
 }
 
+/* SCSS inheritance*/
 %textStyling {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -15,7 +16,7 @@ $tableBorderColor: solid black;
   margin-left: 50px;
 }
 
-/* .class selector*/
+/* .class selector & child selector*/
 .row > div {
   font-size: 22px;
   text-align: center;
@@ -24,8 +25,35 @@ $tableBorderColor: solid black;
   border: 2px white;
 }
 
+/* HTML5 organization*/
+footer {
+  background-color: #F1F1F1;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+/* #id selector*/
+#mainSection {
+  color: #007bff;
+}
+
+/* .class selector*/
+.conversation {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  font-style: italic;
+}
+
+/* multiple elements selector*/
 h1, h2, h3, p, ul {
   @extend %textStyling;
+}
+
+/* descendant selector*/
+ul li {
+  font-style: italic;
 }
 
 img {
