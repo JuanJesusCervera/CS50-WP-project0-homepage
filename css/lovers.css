@@ -32,6 +32,7 @@ h1, h2, h3, p, ul {
   border: 2px white;
 }
 
+/* pseudoclass selector*/
 a:hover {
   background-color: grey;
 }
@@ -45,7 +46,7 @@ footer {
 }
 
 /* #id selector*/
-#mainSection {
+#mainSectionTitle {
   color: #007bff;
 }
 
@@ -58,7 +59,7 @@ footer {
 }
 
 /* multiple elements selector*/
-/* descendant selector*/
+/* descendant selector & SCSS nesting*/
 ul li {
   font-style: italic;
 }
