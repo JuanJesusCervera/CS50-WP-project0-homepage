@@ -14,6 +14,7 @@ h1, h2, h3, p, ul {
   margin-left: 50px;
 }
 
+/* mobile-responsive query for small screens*/
 @media only screen and (max-width: 800px) {
   h1, h2, h3, p, ul {
     margin-top: 5px;
@@ -29,6 +30,10 @@ h1, h2, h3, p, ul {
   padding: 10px;
   background-color: lightgrey;
   border: 2px white;
+}
+
+a:hover {
+  background-color: grey;
 }
 
 /* HTML5 organization*/
